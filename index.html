@@ -4,29 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Szám Hozzáadása</title>
-  <style>
-    body {
-      text-align: center;
-    }
-
-  </style>
+ 
 </head>
 <body>
-
+ 
 <h1>Szám Hozzáadása</h1>
-
+ 
 <form id="szamForm">
   <label for="szamInput">Szám:</label>
-	@@ -15,46 +22,53 @@ <h1>Szám Hozzáadása</h1>
+  <input type="text" id="szamInput" oninput="validateInput()" />
+  <button type="button" onclick="hozzaad()">Hozzáadás</button>
 </form>
-
+ 
 <ul id="szamLista">
-  
+ 
 </ul>
+ 
+ 
+<button type="button" onclick="kiszamolMaximum()">Maximum</button>
+ 
+<p id="maximumEredmeny"></p>
 
-<button type="button" onclick="kiszamolMinimum()">Minimum</button>
-<p id="minimumEredmeny"></p>
-
-
+ 
 </body>
 </html>
